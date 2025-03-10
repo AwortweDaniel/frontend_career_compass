@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Resource Page",
@@ -38,7 +39,7 @@ export default function Resources() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <article className="bg-white shadow-md rounded-lg p-4">
-                <img src="/" alt="Blog Post" className="rounded-md mb-4" />
+                <Image src="/" alt="Blog Post" className="rounded-md mb-4" />
                 <h4 className="font-bold text-lg text-gray-800 mb-2">
                   The 10 Most In-Demand Skills in 2024
                 </h4>

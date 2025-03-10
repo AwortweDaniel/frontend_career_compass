@@ -8,6 +8,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,21 +40,30 @@ export default function RootLayout({
           <div className="container mx-auto flex items-center justify-between py-4 px-6">
             <h1 className="text-xl font-bold text-blue-600">Career Compass</h1>
             <nav className="flex space-x-6">
-              <a href="/" className="text-gray-700 hover:text-blue-500">
+              <Link href="/" className="text-gray-700 hover:text-blue-500">
                 Home
-              </a>
-              <a href="/career" className="text-gray-700 hover:text-blue-500">
+              </Link>
+              <Link
+                href="/career"
+                className="text-gray-700 hover:text-blue-500"
+              >
                 Careers
-              </a>
-              <a href="/resource" className="text-gray-700 hover:text-blue-500">
+              </Link>
+              <Link
+                href="/resource"
+                className="text-gray-700 hover:text-blue-500"
+              >
                 Resources
-              </a>
-              <a href="/about" className="text-gray-700 hover:text-blue-500">
+              </Link>
+              <Link href="/about" className="text-gray-700 hover:text-blue-500">
                 About
-              </a>
-              <a href="/contact" className="text-gray-700 hover:text-blue-500">
+              </Link>
+              <Link
+                href="/contact"
+                className="text-gray-700 hover:text-blue-500"
+              >
                 Contact
-              </a>
+              </Link>
               {/* <SignedOut>
                   <p className="text-gray-700 hover:text-blue-500">
                     <SignInButton mode="modal" />
@@ -78,19 +88,19 @@ export default function RootLayout({
               <h5 className="font-semibold mb-4">Quick Links</h5>
               <ul>
                 <li>
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:underline">
+                  <Link href="/contact" className="hover:underline">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -98,19 +108,19 @@ export default function RootLayout({
               <h5 className="font-semibold mb-4">Support</h5>
               <ul>
                 <li>
-                  <a href="/contact" className="hover:underline">
+                  <Link href="/contact" className="hover:underline">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:underline">
+                  <Link href="/contact" className="hover:underline">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:underline">
+                  <Link href="/contact" className="hover:underline">
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -107,7 +108,7 @@ export default function Contact() {
               </form>
             </div>
             <div className="hidden lg:block w-full lg:w-1/2">
-              <img
+              <Image
                 src="/"
                 alt="Contact Us"
                 className="w-full h-auto rounded-lg shadow-md"
