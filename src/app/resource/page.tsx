@@ -19,8 +19,8 @@ export default function Resources() {
       </Head>
       <div className="bg-gray-50 min-h-screen">
         {/* Hero Section */}
-        <section className="py-16 bg-blue-100 text-center">
-          <div className="container mx-auto">
+        <section className="py-16 bg-blue-100 text-center px-4">
+          <div className="container mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Career Resources & Insights
             </h2>
@@ -32,14 +32,20 @@ export default function Resources() {
         </section>
 
         {/* Latest Blog Posts */}
-        <section className="py-16">
-          <div className="container mx-auto">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
               Latest Blog Post
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <article className="bg-white shadow-md rounded-lg p-4">
-                <Image src="/" alt="Blog Post" className="rounded-md mb-4" />
+                <Image
+                  src="/path/to/image.jpg"
+                  alt="Blog Post"
+                  className="rounded-md mb-4"
+                  width={400}
+                  height={250}
+                />
                 <h4 className="font-bold text-lg text-gray-800 mb-2">
                   The 10 Most In-Demand Skills in 2024
                 </h4>
@@ -74,12 +80,12 @@ export default function Resources() {
         </section>
 
         {/* Career Resources */}
-        <section className="py-16 bg-gray-100">
-          <div className="container mx-auto">
+        <section className="py-16 bg-gray-100 px-4">
+          <div className="container mx-auto max-w-5xl">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
               Career Resources
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white shadow-md rounded-lg p-6 text-center">
                 <h4 className="font-semibold text-lg text-gray-800 mb-4">
                   Resume Writing Guide
